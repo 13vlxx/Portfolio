@@ -1,0 +1,79 @@
+# Ignore les fichiers et répertoires spécifiques à Mac OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore les fichiers et répertoires spécifiques à Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore les fichiers de compilation et les fichiers temporaires
+*.log
+*.pot
+*.pyc
+*.class
+*.o
+*.ko
+*.tmp
+*.swp
+*.bak
+*.cache
+*.egg-info
+__pycache__/
+
+# Ignore les fichiers de configuration
+*.cfg
+*.conf
+*.ini
+*.env
+
+# Ignore les fichiers de sauvegarde
+*.backup
+*.bck
+*.old
+*.orig
+
+# Ignore les fichiers de journalisation
+*.log
+*.log.*
+*.access
+*.access.*
+*.error
+*.error.*
+*.out
+*.out.*
+
+# Ignore les fichiers de dépendances
+node_modules/
+bower_components/
+vendor/
+
+# Ignore les fichiers d'installation
+*.install
+*.md5sum
+*.sha1sum
+
+# Ignore les fichiers de documentation
+docs/
+doc/
+*.doc
+*.docx
+*.pdf
+
+# Ignore les fichiers de cache
+*.db
+*.sql
+*.sqlite
+*.sqlite3
+*.dump
+*.tgz
+*.zip
+
+# Ignore les fichiers de sauvegarde et de récupération
+*~
+*.bak
+*.backup
+*.swp
+*.save
