@@ -13,3 +13,7 @@
     Visiter mon site
   </a>
 </div>
+<br/>
+<p align="center">
+  <img src="img/logo3.png" alt="Votre Nom" width="150" />
+</p>
