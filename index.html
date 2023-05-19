@@ -1,12 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <title>VLXX Folio</title>
   </head>
   <body>
-    <h1>Portfolio first Commit</h1>
+    <!-- * Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">13<span>VLXX</span></a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Accueil</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">À propos</a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">Services</a>
+            </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav_link">Projets</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- * Close button -->
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!-- * Toggle button -->
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- * Main -->
+    <main class="main">
+      <!-- * Accueil -->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content">
+            <div class="home_data">
+              <h3 class="home_subtitle">Bonjour, <span>je suis</span></h3>
+              <h1 class="home_title">Alexandru Rusescu</h1>
+              <h3 class="home_work">Développeur Full-Stack</h3>
+              <p class="home_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ullam, nobis alias
+                est laborum commodi dolorum accusantium, harum impedit enim minima magnam qui quo
+                asperiores provident? Temporibus, mollitia. Pariatur, ullam.
+              </p>
+              <a href="#about" class="button"><button>Parlons !</button></a>
+            </div>
+            <div class="home_social">
+              <a href="https://github.com/13vlxx" target="_blank" class="home_social-link">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alexandru-rusescu-024706259/?originalSubdomain=fr"
+                target="_blank"
+                class="home_social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+              <a href="https://www.instagram.com/13vlxx/" target="_blank" class="home_social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home_image">
+            <svg class="home_blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+              <mask id="maskBlob" mask-type="alpha">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                 170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                 447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                 587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
+              </mask>
+              <g mask="url(#maskBlob)">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                 170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                 447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                 587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
+                <rect x="37" width="476" height="630" fill="url(#pattern0)" />
+              </g>
+              <rect x="37" width="476" height="300" fill="url(#pattern1)" />
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
+
+                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
+                <!-- Insert your profile (recommended size: 640 x 940) -->
+                <image
+                  class="home_img"
+                  id="imageBlob"
+                  width="920"
+                  height="1200"
+                  href="./img/profil.png"
+                />
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!--* A propos  -->
+      <section class="about section" id="about">
+        <div class="about_container container grid">
+          <div class="about_data">
+            <h3 class="section_subtitle">Rusescu <span>Alexandru</span></h3>
+            <h2 class="section_t itle">À propos</h2>
+            <p class="about_description">
+              Développeur FullStack ayant une préférence pour le Backend
+            </p>
+            <a href="#contact" class="button"><button>Me contacter</button></a>
+          </div>
+          <div class="about_image">
+            <svg
+              class="about_blob"
+              viewBox="0 0 550 592"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="maskBorder" mask-type="alpha">
+                <path
+                  d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                   171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                   448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                   270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                   439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
+                  fill="black"
+                />
+              </mask>
+              <g mask="url(#maskBorder)">
+                <rect x="37" width="476" height="630" fill="url(#pattern2)" />
+                <path
+                  d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                   192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                   580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                   40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                   175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
+                  stroke="black"
+                  stroke-width="10"
+                />
+              </g>
+              <rect x="37" width="476" height="300" fill="url(#pattern3)" />
+              <defs>
+                <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
+                <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
+                <image
+                  class="about_img"
+                  id="imageBorder"
+                  width="920"
+                  height="1200"
+                  href="./img/profil.png"
+                />
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!--* Compétences  -->
+      <section class="skills section">
+        <div class="skills_container container grid">
+          <div class="skills_data">
+            <h3 class="section_subtitle">Mes <span>Compétences</span></h3>
+            <h2 class="section_title">Compétences :</h2>
+            <p class="skills_description">
+              Voici la liste de mes compétences que j'ai et que je maitrise dans mes projets.
+            </p>
+            <a href="#projects" class="button"><button>Voir projets</button></a>
+          </div>
+          <div class="skills_content">
+            <ol class="skills_group">
+              <li class="skills_item">HTML & CSS</li>
+              <li class="skills_item">JavaScript</li>
+              <li class="skills_item">React JS (bases)</li>
+              <li class="skills_item">PHP & SQL</li>
+            </ol>
+            <ol class="skills_group" start="5">
+              <li class="skills_item">Git & Github</li>
+              <li class="skills_item">Figma</li>
+              <li class="skills_item">PhpMyAdmid</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!--* Services -->
+      <section class="services section" id="services">
+        <h3 class="section_subtitle center">Mes <span>Services</span></h3>
+        <h2 class="section_title">Ce que je fais</h2>
+        <div class="services_container container grid">
+          <article class="services_card">
+            <i class="ri-layout-3-line services_icon"></i>
+            <h2 class="services_title">Maquettage</h2>
+            <p class="services_description">
+              Réalisations de maquettes en utilisant Figma afin de trouver le bon design qui vous
+              conviendra.
+            </p>
+          </article>
+          <article class="services_card">
+            <i class="ri-code-s-slash-line services_icon"></i>
+            <h2 class="services_title">Développement</h2>
+            <p class="services_description">
+              Développement de sites web sur mesure en utilisant les dernières technologies et
+              librairies et sans utiliser de CMS
+            </p>
+          </article>
+          <article class="services_card">
+            <i class="ri-database-2-line services_icon"></i>
+            <h2 class="services_title">Conception BDD</h2>
+            <p class="services_description">
+              Concéption de A à Z de la base de données, en passant par la Modélisation
+              conceptuelle, Modélisation logique jusqu'à la création des tables
+            </p>
+          </article>
+        </div>
+      </section>
+      <!--* Projets -->
+      <section class="projects section" id="projects">
+        <h3 class="section_subtitle center">Mes <span>réalisations</span></h3>
+        <h2 class="section_title">Projets récents</h2>
+        <div class="projects_container container grid">
+          <article class="projects_card">
+            <img src="./img/project-img-1.jpg" alt="projects image" class="projects_img" />
+            <div class="projects_modal">
+              <span class="projects_subtitle">Web</span>
+              <h2 class="projects_title">Modern Website</h2>
+              <a href="#" class="projects_button"
+                >Visiter le site <i class="ri-external-link-line"></i> ></a
+              >
+            </div>
+          </article>
+          <article class="projects_card">
+            <img src="./img/project-img-2.jpg" alt="projects image" class="projects_img" />
+            <div class="projects_modal">
+              <span class="projects_subtitle">Web</span>
+              <h2 class="projects_title">Modern Website</h2>
+              <a href="#" class="projects_button"
+                >Visiter le site <i class="ri-external-link-line"></i> ></a
+              >
+            </div>
+          </article>
+          <article class="projects_card">
+            <img src="./img/project-img-3.jpg" alt="projects image" class="projects_img" />
+            <div class="projects_modal">
+              <span class="projects_subtitle">Web</span>
+              <h2 class="projects_title">Modern Website</h2>
+              <a href="#" class="projects_button"
+                >Visiter le site <i class="ri-external-link-line"></i> ></a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <h3 class="section_subtitle center">Allons <span>Parler</span></h3>
+        <h2 class="section_title">Me contacter</h2>
+        <div class="contact_container container grid">
+          <form action="" class="contact_form" id="contact_form">
+            <div class="contact_group">
+              <input
+                type="text"
+                name="nom"
+                class="contact_input"
+                required
+                placeholder="Entrez votre nom"
+              />
+              <input
+                type="email"
+                name="email"
+                class="contact_input"
+                required
+                placeholder="Entrez votre email"
+              />
+            </div>
+            <textarea
+              name="message"
+              id=""
+              class="contact_input"
+              required
+              placeholder="Entrez votre message"
+            ></textarea>
+            <p class="contact_message" id="contact_message"></p>
+            <button type="submit" class="button contact_button">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--* Footer  -->
+    <footer class="footer">
+      <div class="footer_container container grid">
+        <div>
+          <h1 class="footer_title">Rusescu <span>Alexandru</span></h1>
+          <h2 class="footer_work">Développeur Full-Stack</h2>
+        </div>
+        <div class="footer_social">
+          <a href="https://github.com/13vlxx" target="_blank" class="footer_social-link">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alexandru-rusescu-024706259/?originalSubdomain=fr"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://www.instagram.com/13vlxx/" target="_blank" class="footer_social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </div>
+        <span class="footer_copy"> &#169; Copyright 13vlxx. All rights reserved </span>
+      </div>
+    </footer>
+    <!--* Scroll home -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== EMAIL JS ===============-->
   </body>
 </html>
