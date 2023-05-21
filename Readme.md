@@ -9,7 +9,7 @@
 ![footerPage](img/footer.png)
 
 <div align="center">
-  <a target="_blank" href="https://rusescu-alexandru-folio.netlify.app" style="background:#65B3FF; color: white; padding: 1rem 1.75rem; border-radius:0.5rem; display: inline-block; text-decoration: none;">
+  <a target="_blank" href="https://rusescu-alexandru.netlify.app" style="background:#65B3FF; color: white; padding: 1rem 1.75rem; border-radius:0.5rem; display: inline-block; text-decoration: none;">
     Visiter mon site
   </a>
 </div>
