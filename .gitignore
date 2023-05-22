@@ -60,7 +60,6 @@ docs/
 doc/
 *.doc
 *.docx
-*.pdf
 
 # Ignore les fichiers de cache
 *.db
