@@ -44,22 +44,44 @@ const contactMessage = document.querySelector("#contact_message");
 function sendEmail(e) {
   e.preventDefault();
 
+  // Récupération des valeurs des champs du formulaire
+  const nom = contactForm.querySelector("input[name=nom]").value;
+  const email = contactForm.querySelector("input[name=email]").value;
+  const message = contactForm.querySelector("textarea[name=message]").value;
+
+  // Vérification des champs
+  if (nom.trim() === "" || email.trim() === "" || message.trim() === "") {
+    // Au moins un des champs est vide, afficher un message d'erreur
+    contactMessage.textContent = "Veuillez remplir tous les champs ❌";
+    return; // Arrêter l'exécution de la fonction
+  }
+
+  // Envoi du formulaire avec EmailJS
   emailjs
-    .sendForm("service_tlr0gdd", "template_hkya058", "#contact_form", "kNI1t7Fsf_3QPX1Dp")
+    .send(
+      "service_tlr0gdd",
+      "template_hkya058",
+      {
+        nom: nom,
+        email: email,
+        message: message,
+      },
+      "kNI1t7Fsf_3QPX1Dp"
+    )
     .then(
       () => {
-        //* Message de succès
+        // Message de succès
         contactMessage.textContent = "Message envoyé avec succès ✅";
-        //? Suppression du message après 5secondes
+        // Suppression du message après 5 secondes
         setTimeout(() => {
           contactMessage.textContent = "";
         }, 5000);
-        //? Suppréssion des inputs
+        // Suppression des inputs
         contactForm.reset();
       },
       () => {
-        //! Message d'erreur
-        contactMessage.textContent = "Erreur lors de l'envoie du message ❌";
+        // Message d'erreur
+        contactMessage.textContent = "Erreur lors de l'envoi du message ❌";
       }
     );
 }
