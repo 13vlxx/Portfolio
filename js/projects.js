@@ -1,45 +1,51 @@
 // Créez un tableau d'objets pour stocker les informations des sites
 const projects = [
   {
+    techno: "React.JS, TailwindCSS",
+    title: "imageWorld",
+    imgSrc: "./img/projects/imageWorld.jpg",
+    link: "https://imag3world.netlify.app/",
+  },
+  {
     techno: "React.JS, TailwindCSS, Redux",
     title: "vlxxCod3Editor",
-    imgSrc: "./img/vlxxCod3Editor.png",
+    imgSrc: "./img/projects/vlxxCod3Editor.png",
     link: "https://vlxxcod3editor.netlify.app/",
   },
   {
     techno: "React.JS, TailwindCSS, Redux",
     title: "BoxShadow Generator",
-    imgSrc: "./img/boxshadow.jpg",
+    imgSrc: "./img/projects/boxshadow.jpg",
     link: "https://boxshadow-gen.netlify.app/",
   },
   {
     techno: "React.JS, TailwindCSS, Redux",
     title: "Redux Fruits",
-    imgSrc: "./img/fruits.jpg",
+    imgSrc: "./img/projects/fruits.jpg",
     link: "https://redux-fruits.netlify.app/",
   },
   {
     techno: "React.JS",
     title: "React JS Country API",
-    imgSrc: "./img/countries.jpg",
+    imgSrc: "./img/projects/countries.jpg",
     link: "https://react-countryapi.netlify.app",
   },
   {
     techno: "React.JS",
     title: "React Todos",
-    imgSrc: "./img/todos.jpg",
+    imgSrc: "./img/projects/todos.jpg",
     link: "https://13vlxx-react-todos.netlify.app/",
   },
   {
     techno: "PHP, SQL, Bootstrap",
     title: "ByteMaster",
-    imgSrc: "./img/bytemaster.png",
+    imgSrc: "./img/projects/bytemaster.png",
     link: "http://bytemaster.alwaysdata.net/",
   },
   {
     techno: "HTML, CSS, JS",
     title: "Vite JS Clone",
-    imgSrc: "./img/vitejs.jpg",
+    imgSrc: "./img/projects/vitejs.jpg",
     link: "https://clone-vitejs.netlify.app",
   },
 ];
